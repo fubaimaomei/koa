@@ -1,0 +1,29 @@
+{
+  "name": "ch04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "set NODE_ENV=dev && node app.js",
+    "init-db": "set NODE_ENV=dev && node init-db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-nunjucks-2": "^3.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^5.0.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.15.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}

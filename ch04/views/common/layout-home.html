@@ -1,0 +1,37 @@
+<!--  核心公共视图 -->
+{% extends "./layout.html" %}
+
+<!-- 引入首页的样式表 -->
+{% block head %}
+<!-- koa-static 已经配置已经指定了静态资源的路径前缀 -->
+<link rel="stylesheet" href="/home/main.css">
+{% endblock %}
+
+{% block body %}
+    <!-- 预留 banner 的 视图空间 -->
+    {% block homeBanner %}
+    {% endblock %}
+
+    <div class="show_time">
+            <div class="feature-con">
+                <ul class="feature fn-clear">
+                    <li class="feature-item"><i class="ico"></i>
+                        <h4 class="tit">免费资源</h4>
+                        <p class="des">为天地立心</p>
+                    </li>
+                    <li class="feature-item"><i class="ico"></i>
+                        <h4 class="tit">体系知识</h4>
+                        <p class="des">为科技立命</p>
+                    </li>
+                    <li class="feature-item"><i class="ico"></i>
+                        <h4 class="tit">实战项目</h4>
+                        <p class="des">为大牛继绝学</p>
+                    </li>
+                    <li class="feature-item"><i class="ico"></i>
+                        <h4 class="tit">线下交流</h4>
+                        <p class="des">为教育开太平</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+{% endblock %}
